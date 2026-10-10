@@ -1,17 +1,10 @@
+import ComponentA from "./components/ComponentA";
 function App() {
-  function handleSubmit(event) {
-    event.preventDefault();
-    alert("Form Submitted");
-  }
-
+  const name = "TAUSIF"
   return (
-    <>
-      <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="Enter your name" />
-        <button type="submit">Submit</button>
-      </form>
-    </>
+    <div>
+      <ComponentA name={name}/>
+    </div>
   );
 }
-
 export default App;

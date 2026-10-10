@@ -1,0 +1,37 @@
+import Button from "./components/Button";
+import Card from "./components/Card"
+
+function App() {
+  function handleSave() {
+    alert("Saved Successfully");
+  }
+
+  return (
+    <div> 
+    <>
+      <h1>Reusable Components</h1>
+      <Button text="Submit" onClick={handleSave} />
+      <Button text="Save" onClick={handleSave} />
+      <Button text="Cancel" onClick={handleSave} />
+      <Button text="Download" onClick={handleSave} />
+      <Button text="Upload" onClick={handleSave}/>
+      <Button />
+    </>
+
+    <div>
+        <Card>
+            <h1>CARD</h1>
+            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+        </Card>
+        <Card>
+            <h1>CARD 2</h1>
+            <p>lorem </p>
+            <button onClick={handleSave}>Click</button>
+            <div>This is div</div>
+            asdasda
+        </Card>
+    </div>
+    </div>
+  );
+}
+export default App;
