@@ -1,0 +1,27 @@
+function App() {
+
+  function handleClick(){
+    alert("You Clicked Me!");
+  }
+
+  function handleClick2(){
+    alert("You Clicked Me 2!");
+  }
+
+
+  function handleClick3(){
+    alert("You Clicked Me 3!");
+  }
+  
+
+  return(
+    <>
+      <button onClick={handleClick}>Click Me 1</button>
+      <button onClick={handleClick2}>Click Me 2</button>
+      <button onClick={handleClick3}>Click Me 3</button>
+    </>
+  )
+
+}
+
+export default App;

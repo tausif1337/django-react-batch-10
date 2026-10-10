@@ -1,0 +1,16 @@
+import User from "./User";
+function App() {
+  const name = "Md Tausif Hossain"
+  const age = 30
+  return(
+    <>
+      <User name = {name} age = {age}  />
+      <User name = "Shafin" age = "25"/>
+      <User name = "Jasin" age = "12"/>
+      <User name = "Asim" age = "34"/>
+      <User name = "Hasim" age = "15"/>
+    </>
+  )
+}
+
+export default App;
