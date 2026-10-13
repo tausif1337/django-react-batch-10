@@ -1,0 +1,52 @@
+import { useState } from "react";
+function App() {
+  // const [count, setCount] = useState([]);
+  // const [ state variable , state setter function ] = useState ( inital state value)
+  const [fruits, setFruits] = useState([
+    "Apple",
+    "Banana",
+    "Orange",
+    "Mango",
+    "Pineapple",
+  ]);
+
+  const [person, setPerson] = useState({
+    id: 1,
+    name: "TAUSIF",
+    age: 31,
+  });
+
+  // function increment() {
+  //   setCount(100);
+  // }
+
+  // function reset() {
+  //   setCount("TAUSIF");
+  // }
+
+  function updateFruits() {
+    setFruits([...fruits, "Grapes"]);
+  }
+
+  function updatePerson() {
+    setPerson({
+      ...person,
+      name: "SHAFIN",
+    });
+  }
+
+  return (
+    <div>
+      <h1>Counter App</h1>
+      <p>{fruits.join(", ")}</p>
+      <p>Name: {person.name}</p>
+      <p>Age: {person.age}</p>
+      {/* <p>Count: {count} </p> */}
+      {/* <button onClick={increment}>Increment</button> */}
+      {/* <button onClick={reset}>Reset</button> */}
+      <button onClick={updateFruits}>Update Fruits</button>
+      <button onClick={updatePerson}>Update Person</button>
+    </div>
+  );
+}
+export default App;
